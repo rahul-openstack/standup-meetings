@@ -1,0 +1,62 @@
+
+
+1. Install Express: 
+
+        npm install express -g
+
+2. install express generator 
+
+    npm install express-generator -g
+
+3. Use Express
+
+    express -H
+
+
+4. Run 
+    npm install
+
+5. Start the website: 
+
+        npm start
+
+6. Wire up View engine
+
+    npm install swig --save 
+
+7. Change view engine from hjs to html in app.js
+
+
+8. assign the swig view engine to .html files
+
+    var swig = require('swig');
+    app.engine('html', swig.renderFile);
+
+9. Rename the .hjs to .html in your Views folder
+
+10. uninstall hogan 
+
+npm uninstall hjs --save
+
+
+11. Install RoboMongo
+
+
+12. Install mongoose
+
+npm install mongoose --save
+
+
+13. Modify app.js for mongoose settings / mongo db settings to mongo lab
+
+
+// Mongoose ODM 
+var mongoose = require('mongoose');
+
+// connect to MongoDB
+mongoose.connect('mongodb://rahul:rahul@ds041556.mlab.com:41556/standups_rahul');
+
+
+
+
+
